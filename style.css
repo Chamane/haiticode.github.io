@@ -1,0 +1,100 @@
+:root{
+  font-size: calc(0.85em + 1vw);
+  --success: #0ed145;
+  --error: #ff0707;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(61,201,109);
+}
+
+h1{
+  font-size: 0.85em;
+}
+
+.content-box{
+  position: absolute;
+  padding: 1.5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20em;
+  border: 0.2px solid #fff;
+  box-shadow: 5px 10px 10px rgb(40, 142,77);
+  text-align: center;
+  color: #fff;
+  background-color: #87a58a;
+}
+
+.note, .mention{
+  display: block;
+}
+.note{
+  font-size: 0.85em;
+}
+.mention{
+  font-size: 0.4em;
+}
+.note-periode{
+  font-size: 0.4em;
+}
+.note-annuelle > .note{
+  font-size: 1em;
+}
+.note-annuelle > .mention{
+  font-size: 0.5em;
+}
+.note-annuelle{
+  padding: 0.2rem;
+  border-radius: 0.3em;
+  background-color: var(--success);
+  margin: 0.3em;
+}
+.trimestre{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0.2rem;
+}
+
+.note-trimestre{
+  padding: 0 1.5em;
+  margin: 0 0.2em;
+  border-radius: 0.3em;
+  background-color: var(--success);
+}
+
+.note-saisie{
+  display: flex;
+  flex-direction: row;
+}
+
+label{
+  font-size: 0.7em;
+}
+
+.note-trim-saisie{
+  margin-top: 0.8em;
+  padding: 0.2em;
+}
+input{
+  padding: 0.3em;
+  display: inline-block;
+  width: 6em;
+}
+.intra{
+  margin-bottom: 1.5em;
+}
+
+.alert{
+  padding: 0.3em;
+  border-radius: 0.2em;
+  background-color: var(--error);
+}
+
+.notification{
+  font-size: 0.75em;
+}
