@@ -16,13 +16,13 @@ h1{
 
 .content-box{
   position: absolute;
-  padding: 1.5em;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20em;
+  transform: translateX(-50%);
+  padding: 1.5em;
+  padding-top: 0;
+  margin-top: 6.5em;
   border: 0.2px solid #fff;
-  box-shadow: 5px 10px 10px rgb(40, 142,77);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
   text-align: center;
   color: #fff;
   background-color: #87a58a;
@@ -59,6 +59,7 @@ h1{
   padding: 0.2rem;
   border-radius: 0.3em;
   background-color: var(--success);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   margin: 0.3em;
 }
 .trimestre{
@@ -74,6 +75,7 @@ h1{
   margin: 0 0.2em;
   border-radius: 0.3em;
   background-color: var(--success);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .note-saisie{
@@ -82,7 +84,7 @@ h1{
 }
 
 label{
-  font-size: 0.7em;
+  font-size: 0.4em;
 }
 
 .note-trim-saisie{
@@ -92,7 +94,7 @@ label{
 input{
   padding: 0.3em;
   display: inline-block;
-  width: 6em;
+  width: 4em;
 }
 .intra{
   margin-bottom: 1.5em;
@@ -106,4 +108,33 @@ input{
 
 .notification{
   font-size: 0.75em;
+}
+
+.matiere{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.4em;
+  background: var(--success);
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.nom-matiere, .nom-trimestre{
+  font-size: 0.7em;
+}
+
+.notes{
+  position: fixed;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border: 0.5px solid #fff;
+  padding: 0.5em;
+  text-align: center;
+  color: #fff;
+  background-color: #87a58a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
